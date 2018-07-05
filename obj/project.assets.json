@@ -12663,11 +12663,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arkadiuszplichta/Repositories/dotnet-docs-samples-master/appengine/flexible/HelloWorld/HelloWorld.csproj",
+      "projectUniqueName": "/Users/arkadiuszplichta/.Trash/HelloWorld/HelloWorld.csproj",
       "projectName": "HelloWorld",
-      "projectPath": "/Users/arkadiuszplichta/Repositories/dotnet-docs-samples-master/appengine/flexible/HelloWorld/HelloWorld.csproj",
+      "projectPath": "/Users/arkadiuszplichta/.Trash/HelloWorld/HelloWorld.csproj",
       "packagesPath": "/Users/arkadiuszplichta/.nuget/packages/",
-      "outputPath": "/Users/arkadiuszplichta/Repositories/dotnet-docs-samples-master/appengine/flexible/HelloWorld/obj/",
+      "outputPath": "/Users/arkadiuszplichta/.Trash/HelloWorld/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
