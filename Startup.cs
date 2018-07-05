@@ -21,6 +21,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -41,11 +42,11 @@ namespace HelloWorld
     {
       services.Configure<CookiePolicyOptions>(options =>
         {
-          //options.CheckConsentNeeded = context => true;
+          options.CheckConsentNeeded = context => true;
           options.MinimumSameSitePolicy = SameSiteMode.None;
         });
 
-      services.AddMvc();
+      services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
       services.AddCors(options => options.AddPolicy("CorsPolicy",
       builder =>
@@ -69,10 +70,10 @@ namespace HelloWorld
       else
       {
         app.UseExceptionHandler("/Error");
-        //app.UseHsts();
+        app.UseHsts();
       }
 
-      //app.UseHttpsRedirection();
+      app.UseHttpsRedirection();
       app.UseStaticFiles();
       app.UseCookiePolicy();
       app.UseCors("CorsPolicy");
