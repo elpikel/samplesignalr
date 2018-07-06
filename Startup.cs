@@ -75,11 +75,12 @@ namespace HelloWorld
         app.UseHsts();
       }
 
-      app.UseHttpsRedirection();
+      //app.UseHttpsRedirection();
 
       var rewriteOptions = new RewriteOptions();
       rewriteOptions.Add(new HttpsRewrite());
-
+      app.UseRewriter(rewriteOptions);
+      
       app.UseStaticFiles();
       app.UseCookiePolicy();
       app.UseCors("CorsPolicy");

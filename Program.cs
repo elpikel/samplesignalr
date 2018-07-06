@@ -35,7 +35,7 @@ namespace HelloWorld
 
     public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
         WebHost.CreateDefaultBuilder(args)
-            .UseUrls("https://*:8080")
+            .UseUrls("https://*:5000")
             .UseStartup<Startup>();
   }
 }
